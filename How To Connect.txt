@@ -1,0 +1,36 @@
+To connect to Cabbage Goers server: (Requires A.pem)
+ssh -i "A.pem" ec2-user@ec2-13-53-37-24.eu-north-1.compute.amazonaws.com
+
+To upload file to server:
+scp -i "A.pem" ./1.mp4 ec2-user@ec2-13-53-37-24.eu-north-1.compute.amazonaws.com:/home/ec2-user/Cabbage-Goers/bin/episodes
+
+A.pem
+_________________________________
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAk29g8tp1QPGzHUtCkAsVMs0dANYBHcpGJLhPjZFDPiM+ULGx
+/ByZdqshSI7NDzwDDXifjALLuqebkdJ8w/n2kfen1GR6BNMLYXIJtrTcJJhC6kTy
+Be4TWQ8KAWjZgqrFQUvRIGtKy0/wMboQfSpRPswx7LNhSGtOu6hhieuyTMAzdAlt
+AG/JGiwyZRkyZRu9ttGEf+0SWlWXHi+kIAlE9gX8CeD91p4okFfLN9cIn9m1mstQ
+Qs4ZhD3XYd/Mtzbv6TyQVC4HtzGlC8JQl5vQys4FqSQAj08oV0H7nORuvcNnSnCx
+RVsuGzOt7YKvZyK4nK2rXeGb16/UJV1U0PgsvQIDAQABAoIBAFRiXTTigFXpgMD1
+gGV9Uma/Kyh9VCo+yaLesvmt+LSp61K4Qcywec2H6QbkZM2hZYXiUj8Kopx0rf/q
+X2qzuMKW4sIXuBbmzA67/H9MSOvREguP5o4qU3yXtPxVjJjTMQ9MW6eYgTiYyjtL
+6YAaJmIw8SovCTEv6eJSX3FXK7ftM3o0bQ4CNTB8N2IGOXCO+sB5SIGo+nagQFAT
+MtiFPgijnPy04vJ2ejvGPGoMwNalp1jWyGn+CkZ9IuOzbZVKrBOuWPANcuTTxlnE
+fxttPt6le8aa5fL75aREPNZWMYAAxHErjgyXZGqwQiAcbzIFKaEADHRAZjHfIo8H
+hsHTewECgYEAyafsfVrW4l/dloabGo8oJfc5T6jjz2I30CijGtj3xynqPldHx9Ps
+SCUgULuO97Nd/gWWMHYqEBdKuhhDOT8kGJ+8XCiPTqeWJAwpOOLkyi8gJi0DTBfq
+Y/KsP0z0SoZ8NmkHzZrp9SkyUXuoDUeRmnKe8bw4l9IBfc/3EHWzL+ECgYEAuyrN
+NpvQwuSAmE4N3nXzTBQIBJvzPmm0RbU/pCfg0BQV6kZ+Z8SiM7ie9Jt6C5PBxHN9
+7FIzLehYzxGvyTry0rZJNHfL2yDznke3m3sHaCZKF0HFTYVtMspfGhvpe0W3t0oa
+VzWeTO2NCGoqWiw0O+tk28Dwgn+XSyrB26B4yF0CgYEAtX1Li3qBIVYUUVAuMhYb
+lSfOzdH7zf7gqpiYSyZwwjAIITleYgtqgXfggKh9QJOPCXsvs8f1jWvZFmmVvuUD
+8KF63hqm96w+pYzIYOlb7lfBgHpMmGSB0Jhsy7/PsW8eRb37huFgpQQBxHIdSm5a
+Lf3w7TFwYbthGkFcY9T6gyECgYAtIzRcUBV3et3cXS6REMb8+PO6ENYHnjxgd0aC
+0y8vXzityBRh+BTZ/lMvUHONaTPYqbWbkXNQRfFs9qn7EKFQ2a8r3Rwnm3nFGSyZ
+bYEqx9kkZLMtb9kW36ExzbtwBC87H77ce0zS5pMVjWzrVC/Ap5MqQAyAnD6jXQtl
+aPzX7QKBgGOio9Lhz5jX/IJMoIEzXB80HuiTwarJTdQward9xcteQ9gH39yAD9+g
+wmY/9HS3MCgR0t63Pzs4bt66QDe8THSSQbOVaYE9Eww5A8VrB8sOigY+rJPpc9zo
+JL8+biJUpo63mUcq3ksC5pi+C+xRBGzaN/aBQVKQu/4pN6mSm9TO
+-----END RSA PRIVATE KEY-----
