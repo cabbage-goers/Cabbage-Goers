@@ -1,0 +1,18 @@
+<video id="video_pod" src="{{URL}}utils/episodes/{{episode}}.mp4" muted controls autoplay></video>
+
+<style>
+    #video_pod {
+        height: 100vh;
+        width: 100vw;
+    }
+</style>
+
+<script class="hbs-ui__scripts">
+    document.querySelector('.hbs-ui__body').classList.add('hbs-ui__body--is-visible')
+
+    setTimeout(() => {
+        document.querySelector('#video_pod').muted = false;
+    }, 400);
+
+    document.body.style.overflowY = 'hidden';
+</script>

@@ -193,6 +193,10 @@ this.Utils.hbs = async () => {
                 if (!hbs) {
                     setTimeout(async () => {
                         this['hbs-ui__body'].classList.add('hbs-ui__body--is-visible');
+
+                        document.querySelectorAll('video').forEach(async (video) => {
+                            video.play();
+                        });
                     }, 5000);
 
                     return;
@@ -227,6 +231,10 @@ this.Utils.hbs = async () => {
 
                 setTimeout(async () => {
                     this['hbs-ui__body'].classList.add('hbs-ui__body--is-visible');
+
+                    document.querySelectorAll('video').forEach(async (video) => {
+                        video.play();
+                    });
                 }, 5000);
             }, 200);
         });

@@ -21,7 +21,7 @@ module.exports = {
 
         return hbs;
     },
-    ev: []/*,
+    ev: [],
     db: async () => {
         const realm = Realm.App.getApp(env.realm._id);
 
@@ -30,7 +30,7 @@ module.exports = {
         const user = await realm.logIn(credentials);
         
         return user.mongoClient(env.realm._atlas);
-    }*//*,
+    }/*,
     nodemailer: nodemailer.createTransport({
         host: 'mail.privateemail.com',
         port: 465,

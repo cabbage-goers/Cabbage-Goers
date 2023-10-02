@@ -439,12 +439,8 @@ Utilities
 <div class="position-relative" style="background-color: var(--color-bg);">
     <header class="mega-nav mega-nav--mobile mega-nav--desktop@md position-absolute width-100% js-mega-nav">
         <div class="mega-nav__container">
-            <a href="/" class="mega-nav__logo">
-                <svg width="30" height="30" viewBox="0 0 30 30">
-                    <title>Go to homepage</title>
-                    <circle cx="15" cy="15" r="15" fill="var(--color-contrast-lower)" />
-                    <path fill="var(--color-contrast-higher)" d="M25.607,4.393,4.393,25.607A15,15,0,0,0,25.607,4.393Z" />
-                </svg>
+            <a href="/" style="width: 30px; height: 30px;" class="mega-nav__logo">
+                <img width="30px" height="30px" src="{{URL 'utils/img/png/favicon.png'}}" alt="">
             </a>
 
             <!-- 👇 icon buttons --mobile -->
@@ -902,13 +898,13 @@ Utilities
                             {{/if}}
                         </li>
 
-                        <!-- 👇 button -->
+                        <!-- 👇 button 
                         <li class="mega-nav__item">
                             <a href="/login" class="reset mega-nav__icon-btn js-tab-focus"
                                 aria-label="Go to login" aria-controls="mega-nav-sign-in">
                                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" style="filter: invert(20%) sepia(50%) saturate(5445%) hue-rotate(337deg) brightness(92%) contrast(90%);" width="20" height="20" viewBox="0 0 512 512"><path d="M184 83.5l164.5 164c4.7 4.7 4.7 12.3 0 17L184 428.5c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17l132-131.4H12c-6.6 0-12-5.4-12-12v-10c0-6.6 5.4-12 12-12h279.9L160 107.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.6-4.7 12.2-4.7 16.9 0zM512 400V112c0-26.5-21.5-48-48-48H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c8.8 0 16 7.2 16 16v288c0 8.8-7.2 16-16 16H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c26.5 0 48-21.5 48-48z" /></svg>
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -941,118 +937,54 @@ Utilities
 
             <div class="text-component margin-bottom-sm">
                 <h1>Hi, It's nice to see you!</h1>
-                <p>Dynamics are important when designing for the web, not only that but how we develop and build upon those who go to designing the web is even more important. Introducing our new educational courses focused on helping younger audiences to get involved and inspired by the tech world and general web development.</p>
+                <p>Here you will find a collection of our podcasts hosted on this website from Cabbage Goers, below is a list of all our episodes, make sure to take a look, listen and enjoy!
+
+                    <p>Consider subscribing to get notified when we post new episodes:</p>
+                </p>
             </div>
 
             <div class="flex flex-wrap items-center gap-sm">
-                <a href="/register" class="btn btn--primary">Get started</a>
+                <a href="/" class="btn btn--primary">Subscribe</a>
                 <a href="/legals/frequently-asked-questions" class="color-inherit">Learn more</a>
             </div>
         </div>
 
-    <div>
-          <header class="container max-width-md margin-bottom-lg">
-    <div class="text-component text-center line-height-lg text-gap-md margin-bottom-md">
-      <h1>Pricing</h1>
-      <p class="color-contrast-medium text-md">We offer different packages with varying prices of our educational courses.</p>
-    </div>
-  </header>
-
-        <div class="padding-x-md p-table">
-  <div class="grid gap-sm">
-    <div class="p-table__item col-4@md">
-      <div class="margin-bottom-2xs">
-        <h4 class="p-table__title">Free</h4>
-      </div>
-
-      <div class="p-table__price margin-bottom-sm"><span>$0</span> <i>/ month</i></div>
-
-      <ul class="p-table__features margin-bottom-md">
-        <li>1x user</li>
-        <li>Free 15/days trial</li>
-        <li>Access to all features</li>
-        <li>1 project</li>
-      </ul>
-
-      <div class="margin-top-auto"><a href="#0" class="btn btn--primary btn--md width-100%">Sign up</a></div>
-    </div>
-
-    <div class="p-table__item p-table__item--popular col-4@md">
-      <div class="flex justify-between items-center margin-bottom-2xs">
-        <h4 class="p-table__title">Pro</h4>
-        <span class="p-table__badge">Popular</span>
-      </div>
-
-      <div class="p-table__price margin-bottom-sm"><span>$15</span> <i>/ month</i></div>
-
-      <ul class="p-table__features margin-bottom-md">
-        <li>1x user</li>
-        <li>Access to all features</li>
-        <li>10 projects</li>
-        <li>E-commerce integration</li>
-        <li>Email support</li>
-      </ul>
-
-      <div class="margin-top-auto"><a href="#0" class="btn btn--primary btn--md width-100%">Sign up</a></div>
-    </div>
-
-    <div class="p-table__item col-4@md">
-      <div class="margin-bottom-2xs">
-        <h4 class="p-table__title">Enterprise</h4>
-      </div>
-
-      <div class="p-table__price margin-bottom-sm"><span>$99</span> <i>/ month</i></div>
-
-      <ul class="p-table__features margin-bottom-md">
-        <li>10x users</li>
-        <li>Access to all features</li>
-        <li>Unlimited projects</li>
-        <li>E-commerce integration</li>
-        <li>24/7 support</li>
-        <li>Full security</li>
-      </ul>
-
-      <div class="margin-top-auto"><a href="#0" class="btn btn--primary btn--md width-100%">Sign up</a></div>
-    </div>
-  </div>
-</div>
-</div>
-
     <div style="height: 100%; width: 100%;" class="color-contrast-low padding-sm border-radius radius-md">
           <header class="container max-width-md margin-y-lg">
     <div class="text-component text-center line-height-lg text-gap-md margin-bottom-md">
-      <h1>Recent Projects</h1>
-      <p class="color-contrast-medium text-md">Below you will find a few of my most recent projects, some of which have been produced for clients, given approval.</p>
+      <h1>Episodes</h1>
+      <p class="color-contrast-medium text-md">Below is some of the recent episodes of our podcast Cabbage Goers, make sure to Subscribe to get updates when we upload new episodes.</p>
     </div>
   </header>
 
         <section class="articles-v3">
+{{#each episodes}}
   <div class="cd-container cd-max-width-adaptive-lg">
     <ul class="articles-v3__list-grid">
       <li class="articles-v3__item-grid">
-        <a href="#0" class="articles-v3__img-wrapper">
-          <img src="{{URL 'utils/img/png/ads.png'}}" alt="Image description">
+        <a href="{{this.url}}" class="articles-v3__img-wrapper">
+          <img src="{{URL 'utils/img'}}{{this.url}}.png" alt="Image description">
         </a>
   
         <div>
-          <h2 class="articles-v3__headline"><a href="https://rustlands.net">RustLands</a></h2>
+          <h2 class="articles-v3__headline"><a href="{{this.url}}">{{this.title}}</a></h2>
           
-          <p class="articles-v3__description">A super innovative website for a gaming server provider RustLands. Provides custom features like linking your internal account with third-party apis like Discord and Steam.</p>
+          <p class="articles-v3__description" style="word-wrap: break-word;">{{this.description}}</p>
   
           <div class="articles-v3__author">
             <a href="#0" class="articles-v3__author-img">
-              <img src="img/article-gallery-v3-author-img-1.jpg" alt="Author picture">
+              <img src="/utils/img/png/favicon.png" alt="Author picture">
             </a>
       
             <div class="articles-v3__author-info">
-              <p><a href="#0" class="articles-v3__author-name" rel="author">Reece Barker</a></p>
-              <p class="articles-v3__date"><time>Jun 24, 2023</time>, &mdash; Approved</p>
+              <p><a href="#0" class="articles-v3__author-name" rel="author">{{this.author}}</a></p>
+              <p class="articles-v3__date"><time>{{this.date}}</time> &mdash; Approved</p>
             </div>
           </div>
         </div>
       </li>
     </ul>
-  </div>
+  </div>{{/each}}
 </section>
 </div>
 

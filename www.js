@@ -17,7 +17,7 @@ const fs = require('fs');
 const path = require('path');
 const { networkInterfaces } = require('os');
 
-//const Realm = require('realm');
+const Realm = require('realm');
 const {
     BSON
 } = require('mongodb-stitch-browser-sdk');
@@ -38,10 +38,13 @@ const https = require('http').createServer(/*{
 const io = require('socket.io')(https);
 
 const utils = require(`./env.js`);
+const episodes = require('./dir/libraries/episodes.js');
 const env = require(path.join(process.cwd(), '/env.json'))
 
 fs.writeFile(path.join(process.cwd(), '/bin/hbs/4.hbs.js'), `
     module.exports = ['URL', (url) => {
+        if (!url.toString().includes('/')) return 'http://${process.env.DOMAIN}/';
+
         return 'http://${process.env.DOMAIN}/' + url;
     }];
 `, (err) => {
@@ -90,7 +93,7 @@ client.use(require('body-parser').urlencoded({
 client.use(async (req, res, next) => {
     req.io = io;
     req.env = env;
-    //req.db = await utils.db();
+    req.db = await utils.db();
     req.tls = utils.tls;
     req.utils = utils;
     req.ev = utils.ev;
@@ -120,10 +123,10 @@ client.use(async (req, res, next) => {
     res.locals.session = req.session._uuid ? {
         _id: req.session.users._id,
         _uuid: req.session._uuid,
-        status: true/*,
+        status: true,
         users: await req.db.db(req.env.realm.db).collection('users').findOne({
             _id: req.session.users._id
-        })*/
+        })
     } : false;
 
     next();
@@ -184,9 +187,23 @@ this.__init__(`./dir`, utils.ev).then(async (_v_) => {
 });
 
 client.get('/', async (req, res) => {    
+    let episodes = [];
+
+    await req.db.db(req.env.realm.db).collection('episodes').find({}).then(async (epss) => {
+        let eps = [];
+        let eps_before = epss;
+    
+        for (var i = 0; i < eps_before.length; i++) {        
+            eps.push(eps_before[i]);
+        }
+    
+        episodes = eps.reverse();
+    });
+
     res.render('@', {
         layout: '2',
         _url: '/',
-        users: res.locals.session.users
+        users: res.locals.session.users,
+        episodes: episodes
     });
 });
